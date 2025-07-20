@@ -1,0 +1,546 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+  --color-primary: #1743e3;
+  --color-white: #eaeaea; 
+  --color-dark: #333; 
+  --color-black: #222; 
+}
+.btn{
+  display: inline-block;
+  width: fit-content;
+  padding: 12px 28px;
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+  letter-spacing: .4px;
+  font-weight: 600;
+  transition: .4s ease;
+  opacity: 0;
+  animation: logoAni 1s ease forwards; 
+  animation-delay: 1.3s;
+}
+.btn:hover{
+  background: transparent;
+  color: var(--color-primary);
+}
+.container{
+  max-width: 1620px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* .......................Start Nav Bar...................... */
+html {
+scroll-behavior: smooth;
+}
+
+
+nav{
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 5%;
+  height: 90px;
+  background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%; 
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+z-index: 300;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container ul{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo h3{
+  font-size: 25px;
+  color: var(--color-black); 
+  opacity: 0;
+  animation: logoAni 1s ease forwards;   
+}
+.nav-link li a{
+  color: var(--color-black);
+  font-size: 17px;
+  transition: .4s ease;
+  display: inline-block;
+  animation: NavliaAni forwards 1s ease;
+  animation-delay: calc(.2s * var(--i));
+  opacity: 0;    
+}
+.nav-link li a:hover{
+  color: var(--color-primary);
+}
+.nav-link li .active{
+  color: var(--color-primary);
+}
+
+
+.social-link li a{
+  height: 40px;
+  width: 40px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  transform: rotate(45deg);
+  transition: .4s ease;   
+  animation: socialAni forwards 1s ease;
+  animation-delay: calc(.2s * var(--i));
+  opacity: 0;    
+}
+.social-link li a:hover{
+  border-color: var(--color-black);
+}
+.social-link li a i{
+  transform: rotate(-45deg);
+  font-size: 20px;
+  color: var(--color-black);
+}
+/* .......................End Nav Bar...................... */
+
+
+/* =================== ANIMACIONES Y ESTILOS ORIGINALES RESTAURADOS =================== */
+@keyframes logoAni {
+  0%{ transform: translateX(-100px); opacity: 0; }
+  100%{ transform: translateX(0); opacity: 1; }
+}
+@keyframes NavliaAni {
+  0%{ transform: translateY(100px); opacity: 0; }
+  100%{ transform: translateY(0); opacity: 1; }
+}
+@keyframes socialAni {
+  0%{ transform: translateX(100px) rotate(45deg); opacity: 0; }
+  100%{ transform: translateX(0) rotate(45deg); opacity: 1; }
+}
+@keyframes H1Ani {
+  0%{ transform: translateY(-100px); opacity: 0; }
+  100%{ transform: translateY(0); opacity: 1; }
+}
+@keyframes zoomOut {
+  0%{ transform:scale(1.1); opacity: 0; }
+  100%{ transform: scale(1); opacity: 1; }
+}
+@keyframes carAni {
+  0%{ transform: translate(180px, -300px) scale(0) rotate(-45deg); opacity: 0; }
+  100%{ transform: translate(0, 0) scale(1) rotate(-45deg); opacity: 1; }
+}
+@keyframes sqbox2Ani {
+  0%{ right: -40%; opacity: 0; }
+  100%{ right: -26%; opacity: 1; }
+}
+
+
+/* .......................start title...................... */
+.catalogo-title {
+  text-align: center;
+  font-size: 48px;
+  color: var(--color-black);
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* .......................end title...................... */
+
+
+/* .......................Start Card...................... */
+.catalogo-slider {
+  background-color: #eeeeea;
+  padding: 100px 20px;
+}
+
+.catalogo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalogo-container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.catalogo-card {
+  width: 80px;
+  border-radius: 2rem;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.catalogo-row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.catalogo-icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.catalogo-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.catalogo-description h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.catalogo-description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.catalogo-slider input {
+  display: none;
+}
+
+.catalogo-slider input:checked + .catalogo-card {
+  width: 600px;
+}
+
+.catalogo-slider input:checked + .catalogo-card .catalogo-description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* .......................End card...................... */
+
+/*=============== Start button Whatsapp ===============*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background-color: #1ebe5d;
+}
+/*=============== Start button Whatsapp ===============*/
+
+/*=============== Sección footer ===============*/
+
+.site-footer {
+  background-color: #fff;
+  color: var(--color-black);
+  padding: 60px 20px 30px;
+  font-family: 'Trebuchet MS', sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-brand h3 {
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--color-black);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: var(--color-primary);
+}
+
+.footer-contact p {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--color-dark);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: var(--color-dark);
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  z-index: 1100;
+}
+.menu-icon span {
+  background-color: var(--color-black);
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+
+.menu-checkbox:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.menu-checkbox:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+.menu-checkbox:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+
+  .nav-link,
+  .social-link {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    transform: translateY(-300%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+  }
+
+  .menu-checkbox:checked ~ .nav-container .nav-link,
+  .menu-checkbox:checked ~ .nav-container .social-link {
+    transform: translateY(0);
+  }
+  .social-link {
+    display: none !important;
+  }
+}
+
+/* =================== RESPONSIVE SLIDER =================== */
+@media screen and (max-width: 1024px) {
+  .catalogo-title {
+    font-size: 32px;
+  }
+  .catalogo-slider {
+    padding: 60px 5px;
+  }
+  .catalogo-container {
+    height: 320px;
+  }
+  .catalogo-card {
+    width: 60px;
+  }
+  .catalogo-slider input:checked + .catalogo-card {
+    width: 350px;
+  }
+  .catalogo-description {
+    width: 220px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .catalogo-wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .catalogo-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .catalogo-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .catalogo-slider {
+    padding: 40px 2px;
+  }
+  .catalogo-container {
+    height: 220px;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .catalogo-card {
+    width: 40px;
+    min-width: 40px;
+    margin: 0 4px;
+    border-radius: 1rem;
+  }
+  .catalogo-slider input:checked + .catalogo-card {
+    width: 180px;
+  }
+  .catalogo-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .catalogo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin: 8px 0 8px 8px;
+  }
+  .catalogo-description {
+    width: 110px;
+    height: 50px;
+    font-size: 12px;
+    padding: 0;
+  }
+  .catalogo-description h4 {
+    font-size: 13px;
+  }
+  .catalogo-description p {
+    font-size: 11px;
+    padding-top: 2px;
+  }
+  .catalogo-title {
+    color: #222 !important;
+    background: #eeeeea;
+    padding: 10px 0 8px 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #fff, 0 0 2px #ccc;
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .catalogo-title {
+    color: #111 !important;
+    background: #fff !important;
+    font-size: 26px !important;
+    padding: 16px 0 14px 0 !important;
+    margin-bottom: 22px !important;
+    font-weight: bold !important;
+    text-shadow: 0 1px 2px #eee, 0 0 2px #bbb;
+    display: block !important;
+    width: 100% !important;
+    border-radius: 0.7rem !important;
+    position: relative !important;
+    z-index: 10 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  .catalogo-slider:first-of-type .catalogo-title,
+  .catalogo-title:first-of-type {
+    margin-top: 80px !important;
+  }
+}

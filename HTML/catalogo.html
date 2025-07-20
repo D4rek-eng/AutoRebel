@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo</title>
+    <link rel="icon" href="assets/logo-pestaña.png" type="image/png" />
+    <!-- ..................Custom Css Link................... -->
+    <link rel="stylesheet" href="../CSS/catalogo.css" />
+    <!-- ..................FontAwesome Link................... -->
+    <script
+      src="https://kit.fontawesome.com/26b47d1c4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ..................comienzo Navbar................... -->
+    <nav>
+      <!-- Menú Hamburguesa -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="container nav-container">
+        <a href="" class="logo"><h3>AutoRebel</h3></a>
+
+        <ul class="nav-link">
+          <li><a href="../index.html" style="--i: 1">Inicio</a></li>
+          <li>
+            <a href="nosotros.html" style="--i: 2">Nosotros</a>
+          </li>
+          <li>
+            <a href="servicios.html" style="--i: 3">Servicios</a>
+          </li>
+          <li>
+            <a href="catalogo.html" style="--i: 4" class="active">Catálogo</a>
+          </li>
+          <li><a href="contacto.html" style="--i: 5">Contáctanos</a></li>
+        </ul>
+
+        <ul class="social-link">
+          <li>
+            <a href="" style="--i: 1"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" style="--i: 2"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="" style="--i: 3"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ..................fin navbar................... -->
+
+    <!--Catalago 1er bloque-->
+    <section class="catalogo-slider">
+      <h1 class="catalogo-title">Autos Deportivos</h1>
+      <div class="catalogo-wrapper">
+        <div class="catalogo-container">
+          <input type="radio" name="slide" id="car1" checked />
+          <label
+            for="car1"
+            class="catalogo-card"
+            style="background-image: url('../assets/ford-mustang.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">1</div>
+              <div class="catalogo-description">
+                <h4>Ford Mustang</h4>
+                <p>Diseño icónico y potencia americana en cada curva.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="car2" />
+          <label
+            for="car2"
+            class="catalogo-card"
+            style="background-image: url('../assets/toyota-carolla.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">2</div>
+              <div class="catalogo-description">
+                <h4>Toyota Corolla</h4>
+                <p>Confiabilidad japonesa con eficiencia y estilo urbano.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="car3" />
+          <label
+            for="car3"
+            class="catalogo-card"
+            style="background-image: url('../assets/chevrolet-camaro.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">3</div>
+              <div class="catalogo-description">
+                <h4>Chevrolet Camaro</h4>
+                <p>Un muscle car con alma deportiva y agresiva.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="car4" />
+          <label
+            for="car4"
+            class="catalogo-card"
+            style="background-image: url('../assets/tesla-model-3.webp')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">4</div>
+              <div class="catalogo-description">
+                <h4>Tesla Model 3</h4>
+                <p>
+                  El futuro eléctrico con tecnología de punta y cero emisiones.
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!--Catalago 1er bloque-->
+
+    <!--Segundo bloque-->
+    <section class="catalogo-slider">
+      <h1 class="catalogo-title">Autos Familiares</h1>
+      <div class="catalogo-wrapper">
+        <div class="catalogo-container">
+          <input type="radio" name="slide-familiares" id="car1-fam" checked />
+          <label
+            for="car1-fam"
+            class="catalogo-card"
+            style="background-image: url('../assets/Honda-cvr.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">1</div>
+              <div class="catalogo-description">
+                <h4>Honda CR-V</h4>
+                <p>Espacio, seguridad y eficiencia para toda la familia.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide-familiares" id="car2-fam" />
+          <label
+            for="car2-fam"
+            class="catalogo-card"
+            style="background-image: url('../assets/kia-sportage.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">2</div>
+              <div class="catalogo-description">
+                <h4>Kia Sportage</h4>
+                <p>
+                  Comodidad y tecnología para viajes familiares inolvidables.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide-familiares" id="car3-fam" />
+          <label
+            for="car3-fam"
+            class="catalogo-card"
+            style="background-image: url('../assets/toyota-rav4.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">3</div>
+              <div class="catalogo-description">
+                <h4>Toyota RAV4</h4>
+                <p>Versatilidad y eficiencia para el día a día y escapadas.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide-familiares" id="car4-fam" />
+          <label
+            for="car4-fam"
+            class="catalogo-card"
+            style="background-image: url('../assets/mazda-cx-5.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">4</div>
+              <div class="catalogo-description">
+                <h4>Mazda CX-5</h4>
+                <p>Diseño elegante con espacio y seguridad para todos.</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!--Segundo bloque-->
+
+    <!--Tercer Bloque-->
+    <section class="catalogo-slider">
+      <h1 class="catalogo-title">Autos a Todo Terreno</h1>
+      <div class="catalogo-wrapper">
+        <div class="catalogo-container">
+          <input type="radio" name="slide-4x4" id="car1-4x4" checked />
+          <label
+            for="car1-4x4"
+            class="catalogo-card"
+            style="background-image: url('../assets/jeep-wrangler.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">1</div>
+              <div class="catalogo-description">
+                <h4>Jeep Wrangler</h4>
+                <p>
+                  Diseñado para conquistar cualquier terreno con estilo y
+                  potencia.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide-4x4" id="car2-4x4" />
+          <label
+            for="car2-4x4"
+            class="catalogo-card"
+            style="background-image: url('../assets/land-rover-defender.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">2</div>
+              <div class="catalogo-description">
+                <h4>Land Rover Defender</h4>
+                <p>Elegancia británica con capacidades off-road legendarias.</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide-4x4" id="car3-4x4" />
+          <label
+            for="car3-4x4"
+            class="catalogo-card"
+            style="background-image: url('../assets/toyota-hilux.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">3</div>
+              <div class="catalogo-description">
+                <h4>Toyota Hilux</h4>
+                <p>
+                  Resistencia y confiabilidad para los caminos más exigentes.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide-4x4" id="car4-4x4" />
+          <label
+            for="car4-4x4"
+            class="catalogo-card"
+            style="background-image: url('../assets/ford-raptor.jpg')"
+          >
+            <div class="catalogo-row">
+              <div class="catalogo-icon">4</div>
+              <div class="catalogo-description">
+                <h4>Ford Raptor</h4>
+                <p>
+                  Una bestia del desierto con suspensión de alto rendimiento.
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!--Tercer Bloque-->
+
+    <!-- ========== Inicio Whatsapp Button ========== -->
+    <a
+      href="https://wa.me/51944491187"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chatea con nosotros por WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- ========== Inicio Whatsapp Button ========== -->
+
+    <!-- ========== Inicio Footer ========== -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>AutoRebel</h3>
+          <p>
+            Conectando personas con el auto de sus sueños. Tecnología, diseño y
+            confianza en un solo lugar.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contáctanos</h4>
+          <p>📍 Av. Principal 123, Lima, Perú</p>
+          <p>📞 +51 987 654 321</p>
+          <p>✉️ contacto@autorebel.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 AutoRebel. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <!-- ========== Fin Footer ========== -->
+  </body>
+</html>

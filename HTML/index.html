@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoRebel - Autos de tus sueños</title>
+    <meta
+      name="description"
+      content="AutoRebel: Conectamos personas con el auto de sus sueños. Compra, vende y encuentra autos con confianza, tecnología y diseño."
+    />
+    <link rel="icon" href="assets/logo-pestaña.png" type="image/png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="AutoRebel - Autos de tus sueños" />
+    <meta
+      property="og:description"
+      content="Conectamos personas con el auto de sus sueños. Compra, vende y encuentra autos con confianza, tecnología y diseño."
+    />
+    <meta property="og:image" content="assets/logo-pestaña.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tusitio.com/" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AutoRebel - Autos de tus sueños" />
+    <meta
+      name="twitter:description"
+      content="Conectamos personas con el auto de sus sueños. Compra, vende y encuentra autos con confianza, tecnología y diseño."
+    />
+    <meta name="twitter:image" content="assets/logo-pestaña.png" />
+    <!-- ..................Custom Css Link................... -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- ..................FontAwesome Link................... -->
+    <script
+      src="https://kit.fontawesome.com/26b47d1c4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <!-- Menú Hamburguesa -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="container nav-container">
+        <a href="" class="logo"><h3>AutoRebel</h3></a>
+
+        <ul class="nav-link">
+          <li><a href="index.html" style="--i: 1" class="active">Inicio</a></li>
+          <li><a href="nosotros.html" style="--i: 2">Nosotros</a></li>
+          <li><a href="servicios.html" style="--i: 3">Servicios</a></li>
+          <li><a href="catalogo.html" style="--i: 4">Catálogo</a></li>
+          <li><a href="contacto.html" style="--i: 5">Contáctanos</a></li>
+        </ul>
+
+        <ul class="social-link">
+          <li>
+            <a href="" style="--i: 1"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" style="--i: 2"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="" style="--i: 3"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ..................comienzo Header Section................... -->
+    <header>
+      <div class="container header-container">
+        <div class="header-left">
+          <h1>Conduce diferente.</h1>
+          <h3>AutoRebel: Auto que habla por ti.</h3>
+          <p>
+            Cada auto tiene una historia. En AutoRebel, te ayudamos a encontrar
+            la que encaje contigo. Tecnología, diseño y confianza en un solo
+            lugar. Porque mereces más <br />
+            que solo un medio de transporte.
+          </p>
+          <a href="#autos_populares" class="btn">Más Conocidos</a>
+        </div>
+        <div class="header-right">
+          <div class="sq-box">
+            <img src="../assets/car.png" alt="Auto deportivo moderno" />
+          </div>
+        </div>
+      </div>
+      <div class="sq-box2"></div>
+    </header>
+    <!-- ..................fin Header Section................... -->
+
+    <!-- ..................Inicio Sección Misión y Cards................... -->
+    <section class="about-video">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../assets/fondo-video.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay">
+        <div class="container about-container">
+          <h2>Nuestra Misión</h2>
+          <p>
+            En <strong>AutoRebel</strong>, conectamos a las personas con el auto
+            de sus sueños. Nos impulsa la pasión por ofrecer una experiencia de
+            compra confiable, transparente y emocionante.
+          </p>
+        </div>
+
+        <div class="container cards-container">
+          <div class="card">
+            <i class="fa-solid fa-car" style="color: #000000"></i>
+            <h3>Calidad Garantizada</h3>
+            <p>Vehículos inspeccionados y certificados para tu tranquilidad.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-user-group" style="color: #000000"></i>
+            <h3>Atención Personalizada</h3>
+            <p>Te acompañamos en cada paso del proceso de compra.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-credit-card" style="color: #000000"></i>
+            <h3>Financiamiento Flexible</h3>
+            <p>Opciones adaptadas a tus necesidades y presupuesto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ..................Fin Sección Misión y Cards................... -->
+    <section class="offices-section">
+      <div class="container">
+        <h2>Nuestras Oficinas</h2>
+        <p>
+          Estamos presentes en las principales ciudades para estar más cerca de
+          ti.
+        </p>
+        <div class="office-wrapper">
+          <div id="office-card-area">
+            <div class="office-box-area">
+              <div class="office-box">
+                <img src="../assets/img1.jpg" alt="Oficina Lima" />
+                <div class="office-overlay">
+                  <h3>Lima</h3>
+                  <p>
+                    Ubicada en el corazón de Miraflores, nuestra sede principal.
+                  </p>
+                  <a href="#">Ver más</a>
+                </div>
+              </div>
+              <div class="office-box">
+                <img src="../assets/img2.jpg" alt="Oficina Arequipa" />
+                <div class="office-overlay">
+                  <h3>Arequipa</h3>
+                  <p>
+                    Atención personalizada en nuestra oficina del centro
+                    histórico.
+                  </p>
+                  <a href="#">Ver más</a>
+                </div>
+              </div>
+              <div class="office-box">
+                <img src="../assets/img3.jpg" alt="Oficina Piura" />
+                <div class="office-overlay">
+                  <h3>Piura</h3>
+                  <p>
+                    Conectando el norte del país con tecnología y confianza.
+                  </p>
+                  <a href="#">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion mas vendidos-->
+    <section class="bestsellers-section">
+      <div class="bestsellers-container">
+        <h2 class="section-title" id="autos_populares">
+          Los más buscados por nuestros clientes
+        </h2>
+        <p class="section-subtitle">
+          Estos modelos destacan por su estilo, rendimiento y popularidad.
+          ¡Descubre por qué todos los quieren!
+        </p>
+        <div class="card__container">
+          <article class="card__article">
+            <img src="../assets/car1.webp" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <h3 class="card__title">
+                Ford <br />
+                Raptor
+              </h3>
+              <span class="card__price">s/379,962</span>
+            </div>
+
+            <img src="../assets/bg-card.png" alt="image" class="card__bg" />
+
+            <a href="#" class="card__button">
+              Más Información <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="card__article">
+            <img src="../assets/car2.webp" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <h3 class="card__title">
+                Audi q6 <br />
+                e-tron
+              </h3>
+              <span class="card__price">s/112,990</span>
+            </div>
+
+            <img src="../assets/bg-card.png" alt="image" class="card__bg" />
+
+            <a href="#" class="card__button">
+              Más Información <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="card__article">
+            <img src="../assets/car3.png" alt="fondo" class="card__img" />
+
+            <div class="card__data">
+              <h3 class="card__title">
+                Mercedes-Benz <br />
+                Clase C
+              </h3>
+              <span class="card__price">s/197.000</span>
+            </div>
+
+            <img src="../assets/bg-card.png" alt="image" class="card__bg" />
+
+            <a href="#" class="card__button">
+              Más Información <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Inicio Whatsapp Button ========== -->
+    <a
+      href="https://wa.me/51944491187"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chatea con nosotros por WhatsApp"
+      title="Se abrirá WhatsApp Web o la app de WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- ========== Inicio Whatsapp Button ========== -->
+
+    <!-- ========== Inicio Footer ========== -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>AutoRebel</h3>
+          <p>
+            Conectando personas con el auto de sus sueños. Tecnología, diseño y
+            confianza en un solo lugar.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contáctanos</h4>
+          <p>📍 Av. Principal 123, Lima, Perú</p>
+          <p>📞 +51 987 654 321</p>
+          <p>✉️ contacto@autorebel.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 AutoRebel. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <!-- ========== Fin Footer ========== -->
+  </body>
+</html>
