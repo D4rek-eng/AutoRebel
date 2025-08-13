@@ -12,25 +12,50 @@
     --color-dark: #333; 
     --color-black: #222; 
 }
+/* Botón personalizado con mayor especificidad para evitar conflictos con Bootstrap */
+body .btn,
 .btn{
-    display: inline-block;
-    width: fit-content;
-    padding: 12px 28px;
-    background: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: var(--color-white);
-    letter-spacing: .4px;
-    font-weight: 600;
-    transition: .4s ease;
+    display: inline-block !important;
+    width: fit-content !important;
+    padding: 12px 28px !important;
+    background: var(--color-primary) !important;
+    border: 2px solid var(--color-primary) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+    color: var(--color-white) !important;
+    letter-spacing: .4px !important;
+    font-weight: 600 !important;
+    transition: .4s ease !important;
     opacity: 0;
     animation: logoAni 1s ease forwards; 
     animation-delay: 1.3s;
 }
+body .btn:hover,
 .btn:hover{
-    background: transparent;
-    color: var(--color-primary);
+    background: transparent !important;
+    color: var(--color-primary) !important;
+}
+
+/* Clase específica para botones personalizados que no se vean afectados por Bootstrap */
+.btn-custom{
+    display: inline-block !important;
+    width: fit-content !important;
+    padding: 12px 28px !important;
+    background: var(--color-primary) !important;
+    border: 2px solid var(--color-primary) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+    color: var(--color-white) !important;
+    letter-spacing: .4px !important;
+    font-weight: 600 !important;
+    transition: .4s ease !important;
+    opacity: 0;
+    animation: logoAni 1s ease forwards; 
+    animation-delay: 1.3s;
+}
+.btn-custom:hover{
+    background: transparent !important;
+    color: var(--color-primary) !important;
 }
 .container{
     max-width: 1620px;

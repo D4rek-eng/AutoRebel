@@ -1,0 +1,20 @@
+/* Bootstrap Custom - Solo los estilos que necesitas */
+
+/* Botones de Bootstrap que no interfieran con tu diseño */
+.btn-outline-info {
+    color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+.btn-outline-info:hover {
+    color: #000;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+/* Reset de estilos que Bootstrap podría estar aplicando a elementos que no quieres */
+.btn:not(.btn-outline-info) {
+    /* Esto evita que Bootstrap afecte a tus botones personalizados */
+}
+
+/* Si necesitas más estilos específicos de Bootstrap, agrégalos aquí */ 
